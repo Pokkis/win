@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include "aes.h"
+ 
+#define AES_ECB 0
+#define AES_CBC 1
+#define AES_CFB 2
+#define AES_CTR 3
+#define MODE AES_ECB
+ 
+unsigned char key[16] = { 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22 };
+unsigned char plain[32] = { 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11 };
+unsigned char plain_decrypt[32] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+unsigned char IV[16];
+unsigned char cypher[32];
+int i = 0;
+mbedtls_aes_context aes;
+  
+void SetIV()
+{
+	int i;
+	for (i = 0; i < 16; i++)
+	{ 
+		IV[i] = 0x55;
+	}
+	
+}
+int main()
+{
+	if (MODE == AES_ECB)
+	{
+			mbedtls_aes_setkey_enc(&aes, key, 128);//  set encrypt key			
+			mbedtls_aes_crypt_ecb(&aes, MBEDTLS_AES_ENCRYPT, plain, cypher);
+			mbedtls_aes_setkey_dec(&aes, key, 128);//  set decrypt key
+			mbedtls_aes_crypt_ecb(&aes, MBEDTLS_AES_DECRYPT, cypher, plain_decrypt);
+			i++;			
+	}
+ 
+	if (MODE == AES_CBC)
+	{
+		    mbedtls_aes_setkey_enc(&aes, key, 128);//  set encrypt key
+			SetIV();
+			mbedtls_aes_crypt_cbc(&aes, MBEDTLS_AES_ENCRYPT, 32, IV, plain, cypher);
+			mbedtls_aes_setkey_dec(&aes, key, 128);//  set decrypt key
+			SetIV();
+			mbedtls_aes_crypt_cbc(&aes, MBEDTLS_AES_DECRYPT, 32, IV, cypher, plain_decrypt);
+			i++;			
+	}
+	
+	return 0;
+}
