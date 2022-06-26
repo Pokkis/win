@@ -1,2 +1,1 @@
-# some-of-the-knowledge-points
-This project is used to record bits and pieces of knowledge
+主要用于windows上的编程测试
