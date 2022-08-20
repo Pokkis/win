@@ -1,0 +1,14 @@
+C463D72DC48540DF688EFB654CB6324C 001104020f84
+
+data:image/jpeg;base64,
+
+./demo_mix200 0 0 admin.123 128.128.151.37 1 2
+
+http://128.128.233.101:8086/keepAlive
+http://128.128.233.101:8086/eventRequest
+http://128.128.233.101:8086/resultRequest
+
+http://www.55kad.com:8082/pos/ashx/TD/JL/CaptureInfo.ashx
+http://www.55kad.com:8082/pos/ashx/TD/JL/FaceRegister.ashx
+http://www.55kad.com:8082/pos/ashx/TD/JL/Heartbeat.ashx
+http://www.55kad.com:8082/pos

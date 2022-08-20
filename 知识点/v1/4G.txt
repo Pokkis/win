@@ -1,0 +1,79 @@
+AT+CGDCONT=1,"IP","CMNET"
+AT+CGDCONT=1,"IP","3gwap"
+AT+CGDCONT=1,"IP","3GPPP"
+AT+CGDCONT=1,"IP","gdjppdz01.gziot"
+echo "AT^NDISDUP=1,1, "UNINET"" > /dev/ttyUSB0
+echo "AT^NDISDUP=1,1, "3GNET"" > /dev/ttyUSB2
+AT^NDISDUP=1,0
+步骤：
+1、首先需要ifconfig usb0 up，先使能usb0网卡。
+
+在命令行窗口输入
+echo "AT^NDISDUP=1,1">/dev/ttyUSB0
+发完这条指令后，估计应该等一两分钟才会连上移动网络，
+2、可以通过
+echo "AT^NDISSTATQRY?">/dev/ttyUSB0
+来查看连接情况，如果连接上了，输入下面命令
+cat /dev/ttyUSB0
+就会看到如下信息，
+（IPV4连接状态，IPV6断开状态）
+^NDISSTATQRY: 1,,,"IPV4",0,0,,"IPV6"
+
+3、这时就可以使用udhcpc命令来自动获得IP地址
+~ # udhcpc -i usb0
+
+AT+CCLK  AT+GCAP=? AT+CFUN?  AT+CREG? AT+COPS? 
+
+NDIS：
+一、在配置后4G模块linux驱动之后， ifconfig usb0 up
+
+二、发送指令流程
+
+1、AT+CPIN?      // 查询sim卡是否有识别到
+
+    返回信息 ：+CPIN: READY
+
+2、AT+CSQ       //查询信号强度，范围0~31
+
+    返回信息 ：+CSQ: 17,99
+
+3、AT+CEREG?       // 查询业务数据可用状态
+
+     返回信息 ：+CEREG: 0,1  // 返回 1(或 或 5) 表示数据业务可以使用；返回 2 、3 、4 表示数据业务不可用。此时，表示可以进行数据业务了。
+
+4、AT^SYSINFOEX      //查询模块注册网络制式
+
+    返回信息 ：^SYSINFOEX:2,3,0,1,,6,"LTE",101,"LTE"
+<CR><LF>^SYSINFOEX:
+<srv_status>,<srv_domain>,<roam_status>,<sim_state>,<lock_state>,<sysmode>,<sysmo
+de_name>,<submode>,<submode_name><CR><LF><CR><LF>OK<CR><LF>
+
+5、（NDIS撥號相關）AT+CGDCONT?        // 查询网络制式
+
+      返回信息 ：
+
+        +CGDCONT: 0,"IPV4V6","","",0,0,0,0,0,0
+
+        +CGDCONT: 1,"IP","3gwap","",0,0,0,0,0,0
+
+        +CGDCONT: 11,"IPV4V6","","",0,0,0,0,0,0
+
+6、AT^NDISDUP?        // NDIS拨号是否可用
+
+     返回信息 ：OK
+
+7、AT^NDISDUP=1,1,"CMNET"     // 网络拨号 ，后参数可填写apn接入点
+
+     返回信息 ：OK
+
+8、AT+CGATT?            // 拨号結果 连接成功為1
+
+    返回信息 ：1
+
+三、连接完毕之后执行命令自动获取IP
+
+     udhcpc -i usb0
+
+
+echo -e "AT^SYSINFO\r" >  /dev/ttyUSB0
+ cat   /dev/ttyUSB0

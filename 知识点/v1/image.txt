@@ -1,0 +1,14 @@
+http://128.128.151.56/cgi-bin/images_cgi?channel=0&user=admin&pwd=admin
+http://128.128.151.51/cgi-bin/images_cgi?channel=0&user=admin&pwd=admin123
+http://128.128.60.132/cgi-bin/videocoding_cgi?action=get&channel=0&user=admin&pwd=admin
+
+setenv serverip 192.168.1.17;
+setenv ipaddr 192.168.1.18
+setenv ethaddr 00:12:04:01:03:02
+setenv netmask 255.255.255.0
+setenv gatewayip 192.168.1.1
+
+save
+http://128.128.110.24/cgi-bin/systeminfo_cgi?user=admin&pwd=admin.123
+http://192.168.1.116/cgi-bin/foto_cgi?kan=<1>&user=admin&pwd=admin
+http://192.168.1.120/webs/outAudioCfgEx

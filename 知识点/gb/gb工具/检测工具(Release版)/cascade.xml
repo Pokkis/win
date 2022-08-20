@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><Config>
+<Local>
+<IndexCode>34020000002000000001</IndexCode>
+<LocalIp>128.128.151.198</LocalIp>
+</Local>
+<LastTestInfo>
+<TestID>34020000001110000001</TestID>
+<TestIP>128.128.151.56</TestIP>
+<TestPort>5060</TestPort>
+</LastTestInfo>
+<Protocol>
+<HBCycle>30</HBCycle>
+<CASCADE>
+<SIPPort>5060</SIPPort>
+<TimeOut>60</TimeOut>
+<UserAgent/>
+<UserCode>001</UserCode>
+<Auth>false</Auth>
+<Realm>123</Realm>
+<Login>123</Login>
+<Password>12345678</Password>
+<DB41>false</DB41>
+</CASCADE>
+</Protocol>
+</Config>

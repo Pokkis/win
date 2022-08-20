@@ -1,0 +1,30 @@
+﻿	Declare.c
+		#define SS_SEGMENT_FAULT		0
+
+	main.c
+		#define MAIN_WATCH_DOG_OPEN		0
+
+	Makefile.fx
+		CFLAGS  += -  -g
+		#$(TP) --remove -section=.note --remove -section=.comment $(TARGET)
+		
+(1)
+	第一步，重定向以及定义生成文件：ulimit -c unlimited; echo /mnt/core2.%e.%p > /proc/sys/kernel/core_pattern
+	第二步，运行主程序：./fx256
+	第三部，设备重启后在运：./gdb-arm-hisiv500-linux fx256 core.%e.%p
+
+(2)
+	./gdb-arm-hisiv500-linux fx256
+	输入：run
+	出错后：bt
+	
+	#include "fx16A_encodevoice.h"
+
+
+查看句柄命令：
+ulimit -n  //系统默认的句柄数
+lsof -n|awk '{print $2}'|sort|uniq -c|sort -nr|more //查看当前进程打开了多少句柄数
+lsof | wc -l //查看系统文件句柄总数
+通过进程号查看句柄：
+cd /proc/217(进程号)/fd
+ls -l | wc -l

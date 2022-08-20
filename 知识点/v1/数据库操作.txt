@@ -1,0 +1,60 @@
+https://link.bi.sensetime.com
+账号：jvtadmin 密码：ToPFOji6 
+
+iHM42-2T07-T2 测温门禁对接senselink 平台，根据商汤提供的sdk 上传和下发接口，实现比对结果、抓拍图片、温度数据人员信息等数据上传和接收平台下发对应数据等功能
+
+
+echo export  TZ=CTS-8  >> /etc/profile
+
+export  TZ=CTS-8
+export  TZ=Asia/Shanghai
+
+数据库操作：
+.table //可以查看创建的表
+select *from 表名 //可以查看表内容
+select *from CmpInfoList;
+
+select *from blacklist;
+select *from guest;
+select *from user;
+
+select *from blacklistNew;
+select *from guestNew;
+select *from userNew;
+select *from userNew where type='0';
+
+//统计表内总数
+SELECT COUNT(*) FROM userNew;
+SELECT COUNT(*) FROM user;
+select COUNT(*) from userNew where type='0';
+
+
+SELECT COUNT(*) FROM WhiteList;
+SELECT * FROM WhiteList;
+
+//筛选出增加的
+select * from userNew A where not exists (select * from user B where A.ID=B.ID);
+
+select * from user minus select * from userNew;
+
+筛选出相同的且需要更新的
+select ID from (select ID from user intersect select ID from userNew) except select ID from (select * from user intersect select * from userNew);
+select ID,UpdataTime from (select ID,UpdataTime from user intersect select ID,UpdataTime from userNew) except select ID,UpdataTime from (select * from user intersect select * from userNew);
+
+//新
+select * from userNew A where exists (select * from user B where A.ID=B.ID and A.UpdataTime!=B.UpdataTime);
+
+//更新
+update user set UpdataTime=(select UpdataTime from userNew where ID=7767211) where ID=7767211;
+update user set value = (select UpdataTime from userNew);
+REPLACE INTO user SELECT UpdataTime FROM userNew WHERE ID=ID
+
+INSERT OR REPLACE INTO user(ID,UpdataTime) SELECT userNew.ID userNew.UpdataTime FROM userNew B,user A WHERE userNew.ID = user.ID AND userNew.UpdataTime != user.UpdataTime ;
+
+SELECT COUNT(*) FROM CmpInfoList where time>='2020-04-27 00:00:00' and time <='2020-04-29 23:59:59';
+
+618858
+select *from user;
+update user set name='cdy' where id='618858';
+select *from userNew;
+update userNew set name='cdy' where id='618858';

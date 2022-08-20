@@ -1,0 +1,3174 @@
+REGISTER sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:5060;rport;branch=z9hG4bK1078496976
+Route: <sip:44190006041328034400@120.198.174.206:5080;lr>
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=842570327
+To: <sip:44190006041328034400@128.128.70.24:5060>
+Call-ID: 1412808236@128.128.70.24
+CSeq: 1 REGISTER
+Contact: <sip:44190006041328034400@128.128.70.24:5060>
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Expires: 3600
+Content-Length: 0
+
+SIP/2.0 401 Unauthorized
+CSeq: 1 REGISTER
+Call-ID: 1412808236@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=842570327
+To: <sip:44190006041328034400@128.128.70.24:5060>;tag=ebe16fa5
+Via: SIP/2.0/UDP 128.128.70.24:5060;branch=z9hG4bK1078496976;rport=19522;received=14.153.48.58
+WWW-Authenticate: Digest realm="10.1.21.190:5080",nonce="IuJHRgSbIK8eSrp1uZ8ApWZv-V+oUS9q",opaque="3742233835613",algorithm=MD5
+
+REGISTER sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:5060;rport;branch=z9hG4bK312728232
+Route: <sip:44190006041328034400@120.198.174.206:5080;lr>
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=842570327
+To: <sip:44190006041328034400@128.128.70.24:5060>
+Call-ID: 1412808236@128.128.70.24
+CSeq: 2 REGISTER
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Authorization: Digest username="44190006041328034400", realm="10.1.21.190:5080", nonce="IuJHRgSbIK8eSrp1uZ8ApWZv-V+oUS9q", uri="sip:22335990002000000001@120.198.174.206:5080", response="dc27a73805a4026f1de7cab14add6638", algorithm=MD5, opaque="3742233835613"
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Expires: 3600
+Content-Length: 0
+
+SIP/2.0 200 OK
+CSeq: 2 REGISTER
+Call-ID: 1412808236@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=842570327
+To: <sip:44190006041328034400@128.128.70.24:5060>;tag=2cc82dae
+Via: SIP/2.0/UDP 128.128.70.24:5060;branch=z9hG4bK312728232;rport=19522;received=14.153.48.58
+Expires: 31536000
+Date: 2020-07-16T17:25:05.445
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1342975751
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2063545042
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 973812118@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>0</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 973812118@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2063545042
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=bf1ed3b1
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1342975751;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359458 MESSAGE
+Call-ID: 1ce10ebc
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=9738b2f3
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK10909744a;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>DeviceInfo</CmdType><SN>2273</SN><DeviceID>44190006041328034400</DeviceID></Query>MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359459 MESSAGE
+Call-ID: 49d4ac7d
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=0073f906
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1aca5e39e;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>DeviceInfo</CmdType><SN>2274</SN><DeviceID>44190006041328034400</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK10909744a;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=9738b2f3
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=758323390
+Call-ID: 1ce10ebc
+CSeq: 359458 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1aca5e39e;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=0073f906
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=32433603
+Call-ID: 49d4ac7d
+CSeq: 359459 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1711256125
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1048355668
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1385106703@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   514
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceInfo</CmdType>
+    <SN>2273</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Result>OK</Result>
+    <DeviceType>IPC</DeviceType>
+    <Manufacturer>Dahua</Manufacturer>
+    <Model>IPC-HFW4436M-I1-V2</Model>
+    <Firmware>2.420.0000.24.R,2017-02-28</Firmware>
+    <MaxCamera>1</MaxCamera>
+    <MaxAlarm>0</MaxAlarm>
+    <Channel>1</Channel>
+    <Port>80</Port>
+    <LoginName>admin</LoginName>
+    <Password>******</Password>
+</Response>
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK2057214903
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=796623037
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 575739119@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   514
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceInfo</CmdType>
+    <SN>2274</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Result>OK</Result>
+    <DeviceType>IPC</DeviceType>
+    <Manufacturer>Dahua</Manufacturer>
+    <Model>IPC-HFW4436M-I1-V2</Model>
+    <Firmware>2.420.0000.24.R,2017-02-28</Firmware>
+    <MaxCamera>1</MaxCamera>
+    <MaxAlarm>0</MaxAlarm>
+    <Channel>1</Channel>
+    <Port>80</Port>
+    <LoginName>admin</LoginName>
+    <Password>******</Password>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1385106703@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1048355668
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=a094dea4
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1711256125;rport=19522;received=14.153.48.58
+
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 575739119@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=796623037
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=3c1d68b3
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK2057214903;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359460 MESSAGE
+Call-ID: af6241ac
+Content-Length: 133
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=b549fbfc
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK3143f8f35;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>Catalog</CmdType><SN>2275</SN><DeviceID>44190006041328034400</DeviceID></Query>SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359461 SUBSCRIBE
+Call-ID: 603b5d02
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=f5dbda3b
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK47924273b;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2276</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:25:07</StartTime><EndTime>2020-07-17T17:25:07</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK47924273b;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=f5dbda3b
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1340275173
+Call-ID: 603b5d02
+CSeq: 359461 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK3143f8f35;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=b549fbfc
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1860113101
+Call-ID: af6241ac
+CSeq: 359460 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1669417484
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1321751500
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 318679022@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   808
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>Catalog</CmdType>
+    <SN>2275</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <SumNum>1</SumNum>
+    <DeviceList Num="1">
+        <Item>
+            <DeviceID>44190006041318034401</DeviceID>
+            <Name>....</Name>
+            <Manufacturer>Dahua</Manufacturer>
+            <Model>IPC-HFW4436M-I1-V2</Model>
+            <Owner>0</Owner>
+            <CivilCode>6532</CivilCode>
+            <Address>axy</Address>
+            <Parental>0</Parental>
+            <ParentID>44190006041328034400</ParentID>
+            <RegisterWay>1</RegisterWay>
+            <Secrecy>0</Secrecy>
+            <Info>
+                <PTZType>3</PTZType>
+            </Info>
+            <Status>ON</Status>
+        </Item>
+    </DeviceList>
+</Response>
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK47924273b;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=f5dbda3b
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1340275173
+Call-ID: 603b5d02
+CSeq: 359461 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2276</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 318679022@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1321751500
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=b866316f
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1669417484;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359463 MESSAGE
+Call-ID: a3e44c54
+Content-Length: 174
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=fca3007c
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1f0631194;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2278</SN><DeviceID>44190006041318034401</DeviceID><GuardCmd>ResetGuard</GuardCmd></Control>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1f0631194;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=fca3007c
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=249830323
+Call-ID: a3e44c54
+CSeq: 359463 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK697877613
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1399196733
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 2045577255@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   189
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceControl</CmdType>
+    <SN>2278</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 2045577255@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1399196733
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=b0572b68
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK697877613;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359464 MESSAGE
+Call-ID: 10a21b23
+Content-Length: 174
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=263e8755
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK43cdedda7;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2279</SN><DeviceID>44190006041318034401</DeviceID><GuardCmd>ResetGuard</GuardCmd></Control>MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359465 MESSAGE
+Call-ID: 301619f9
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=12515979
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK4b8d07812;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2280</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>VideoParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK43cdedda7;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=263e8755
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1177701940
+Call-ID: 10a21b23
+CSeq: 359464 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK4b8d07812;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=12515979
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=605469812
+Call-ID: 301619f9
+CSeq: 359465 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1221198908
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1256637625
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 947223984@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   189
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceControl</CmdType>
+    <SN>2279</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1099845246
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2046095261
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1575857848@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   526
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2280</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <VideoParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <VideoFormat>2</VideoFormat>
+            <Resolution>6</Resolution>
+            <FrameRate>20</FrameRate>
+            <BitRateType>1</BitRateType>
+            <VideoBitRate>5120</VideoBitRate>
+        </Item>
+    </VideoParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 947223984@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1256637625
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=8858288a
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1221198908;rport=19522;received=14.153.48.58
+
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1575857848@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2046095261
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=2af1e9fe
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1099845246;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359466 MESSAGE
+Call-ID: a9387dbd
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=e8b51a8a
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKc9d72bf51;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>PresetQuery</CmdType><SN>2283</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKc9d72bf51;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=e8b51a8a
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=674900325
+Call-ID: a9387dbd
+CSeq: 359466 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK949504508
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=782684492
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1756016332@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   186
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>PresetQuery</CmdType>
+    <SN>2283</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1756016332@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=782684492
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=0eec1ef6
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK949504508;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359467 MESSAGE
+Call-ID: f87363f0
+Content-Length: 143
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=47aadeb8
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK845064702;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>HomePositionQuery</CmdType><SN>2284</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK845064702;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=47aadeb8
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1110099657
+Call-ID: f87363f0
+CSeq: 359467 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Warning: 399 devnull "<220>[Component:382787]Cmd type 'HomePositionQuery' not understood"
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359468 MESSAGE
+Call-ID: 67aff74e
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=26fbeb08
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKd3607a408;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2285</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKd3607a408;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=26fbeb08
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=739862128
+Call-ID: 67aff74e
+CSeq: 359468 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK918522341
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1118590186
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1729823827@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2285</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1729823827@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1118590186
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=605de331
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK918522341;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359469 MESSAGE
+Call-ID: 0e9230fb
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=6e09e138
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK3650938d5;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2286</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK3650938d5;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=6e09e138
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=209988703
+Call-ID: 0e9230fb
+CSeq: 359469 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1263788228
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=6920515
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 662369833@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2286</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 662369833@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=6920515
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=3d207a4d
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1263788228;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359470 MESSAGE
+Call-ID: eb9ba87e
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=5e0ed4b7
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK7430189d2;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2287</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK7430189d2;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=5e0ed4b7
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=448646554
+Call-ID: eb9ba87e
+CSeq: 359470 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1539125796
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1965216914
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1949685882@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2287</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1949685882@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1965216914
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=e27f3432
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1539125796;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359471 MESSAGE
+Call-ID: 335e8b22
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a68c4395
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK45d10ceb0;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2288</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK45d10ceb0;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a68c4395
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=342348911
+Call-ID: 335e8b22
+CSeq: 359471 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK742928898
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1263688468
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 629751056@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2288</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 629751056@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1263688468
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=3ccf3ce6
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK742928898;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359472 MESSAGE
+Call-ID: 1acab3e0
+Content-Length: 133
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=c316004d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK25c76c4cf;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>Catalog</CmdType><SN>2289</SN><DeviceID>44190006041328034400</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK25c76c4cf;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=c316004d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1207412158
+Call-ID: 1acab3e0
+CSeq: 359472 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK195212477
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1184992547
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 229440529@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   808
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>Catalog</CmdType>
+    <SN>2289</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <SumNum>1</SumNum>
+    <DeviceList Num="1">
+        <Item>
+            <DeviceID>44190006041318034401</DeviceID>
+            <Name>....</Name>
+            <Manufacturer>Dahua</Manufacturer>
+            <Model>IPC-HFW4436M-I1-V2</Model>
+            <Owner>0</Owner>
+            <CivilCode>6532</CivilCode>
+            <Address>axy</Address>
+            <Parental>0</Parental>
+            <ParentID>44190006041328034400</ParentID>
+            <RegisterWay>1</RegisterWay>
+            <Secrecy>0</Secrecy>
+            <Info>
+                <PTZType>3</PTZType>
+            </Info>
+            <Status>ON</Status>
+        </Item>
+    </DeviceList>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 229440529@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1184992547
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=91bf8a1b
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK195212477;rport=19522;received=14.153.48.58
+
+MESSAGE sip:08958998749253260000@14.153.48.58:19522 SIP/2.0
+CSeq: 359473 MESSAGE
+Call-ID: acc2ca96
+Content-Length: 271
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=94918d40
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK340b93c27;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>RecordInfo</CmdType><SN>105746</SN><DeviceID>44190006041318034401</DeviceID><StartTime>2020-07-16T17:05:19</StartTime><EndTime>2020-07-16T17:25:37</EndTime><Type>time</Type><IndistinctQuery>1</IndistinctQuery></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK340b93c27;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=94918d40
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>;tag=800400856
+Call-ID: acc2ca96
+CSeq: 359473 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK704072425
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=114300787
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 980789426@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   223
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>RecordInfo</CmdType>
+    <SN>105746</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Name>IPC-HFW4436M-I1-V2</Name>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 980789426@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=114300787
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=50d5ed57
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK704072425;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359474 MESSAGE
+Call-ID: a9c842f0
+Content-Length: 174
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=525cc86d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb3db97801;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2290</SN><DeviceID>44190006041318034401</DeviceID><GuardCmd>ResetGuard</GuardCmd></Control>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb3db97801;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=525cc86d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=548112771
+Call-ID: a9c842f0
+CSeq: 359474 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359475 MESSAGE
+Call-ID: 89ed879c
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=6d667ec8
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK0cdd225ba;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2291</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>VideoParamConfig</ConfigType></Query>MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1296732083
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1239203047
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1728339722@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   189
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceControl</CmdType>
+    <SN>2290</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1728339722@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1239203047
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=28ad673b
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1296732083;rport=19522;received=14.153.48.58
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK0cdd225ba;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=6d667ec8
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=546239770
+Call-ID: 89ed879c
+CSeq: 359475 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK738112492
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2065343505
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1139563777@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   526
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2291</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <VideoParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <VideoFormat>2</VideoFormat>
+            <Resolution>6</Resolution>
+            <FrameRate>20</FrameRate>
+            <BitRateType>1</BitRateType>
+            <VideoBitRate>5120</VideoBitRate>
+        </Item>
+    </VideoParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1139563777@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2065343505
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=67078901
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK738112492;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359476 MESSAGE
+Call-ID: 4ce30b01
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a4d6c891
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK533cb9bdb;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>PresetQuery</CmdType><SN>2294</SN><DeviceID>44190006041318034401</DeviceID></Query>MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1272999860
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=575914565
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 2097936487@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   186
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>PresetQuery</CmdType>
+    <SN>2294</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 2097936487@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=575914565
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=22ee6cbb
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1272999860;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359477 MESSAGE
+Call-ID: 6b972df9
+Content-Length: 143
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=25e81b17
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKba8c10f02;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>HomePositionQuery</CmdType><SN>2295</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKba8c10f02;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=25e81b17
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=5091607
+Call-ID: 6b972df9
+CSeq: 359477 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Warning: 399 devnull "<220>[Component:382787]Cmd type 'HomePositionQuery' not understood"
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359476 MESSAGE
+Call-ID: 4ce30b01
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a4d6c891
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK533cb9bdb;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>PresetQuery</CmdType><SN>2294</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK533cb9bdb;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a4d6c891
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=2011278289
+Call-ID: 4ce30b01
+CSeq: 359476 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359478 MESSAGE
+Call-ID: 66c67af3
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=beafedcc
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK336b62cfd;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2296</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK336b62cfd;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=beafedcc
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=155754072
+Call-ID: 66c67af3
+CSeq: 359478 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1716772372
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1230873633
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 787031236@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2296</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 787031236@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1230873633
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=8426634c
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1716772372;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359479 MESSAGE
+Call-ID: e8f4d223
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a1d0c99d
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKadbc2ac6c;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2297</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKadbc2ac6c;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a1d0c99d
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=275203322
+Call-ID: e8f4d223
+CSeq: 359479 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK524258642
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=727635581
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 563387223@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2297</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 563387223@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=727635581
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=c585983b
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK524258642;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359480 MESSAGE
+Call-ID: 803de370
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=b970f47f
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK897a0a7ef;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2298</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK897a0a7ef;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=b970f47f
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=152496301
+Call-ID: 803de370
+CSeq: 359480 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK2027822711
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=460702375
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 2112185270@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2298</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 2112185270@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=460702375
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=d1a3137a
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK2027822711;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359481 MESSAGE
+Call-ID: b8cb21ee
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d5992d36
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKc1fde040e;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2299</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKc1fde040e;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d5992d36
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=2048083809
+Call-ID: b8cb21ee
+CSeq: 359481 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK300659760
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1981544245
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 681150047@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2299</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 681150047@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1981544245
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=458e9ccc
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK300659760;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359482 SUBSCRIBE
+Call-ID: 56d85f81
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=2ce80205
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK53ee22ea6;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2300</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:25:57</StartTime><EndTime>2020-07-17T17:25:57</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK53ee22ea6;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=2ce80205
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=548048814
+Call-ID: 56d85f81
+CSeq: 359482 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK53ee22ea6;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=2ce80205
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=548048814
+Call-ID: 56d85f81
+CSeq: 359482 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2300</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1687858730
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1017320413
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1010945233@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>1</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1010945233@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1017320413
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=647e5fbd
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1687858730;rport=19522;received=14.153.48.58
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1921551607
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1507991469
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1514793030@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>2</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1514793030@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1507991469
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=a07ee58a
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1921551607;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359484 SUBSCRIBE
+Call-ID: 66ea6750
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d8b951ca
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb5e244a7a;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2302</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:27:12</StartTime><EndTime>2020-07-17T17:27:12</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb5e244a7a;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d8b951ca
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=640778554
+Call-ID: 66ea6750
+CSeq: 359484 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb5e244a7a;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d8b951ca
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=640778554
+Call-ID: 66ea6750
+CSeq: 359484 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2302</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:08958998749253260000@14.153.48.58:19522 SIP/2.0
+CSeq: 359485 MESSAGE
+Call-ID: 6b0b4a11
+Content-Length: 271
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=084b98bf
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK22a3adb92;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>RecordInfo</CmdType><SN>105747</SN><DeviceID>44190006041318034401</DeviceID><StartTime>2020-07-16T17:05:19</StartTime><EndTime>2020-07-16T17:27:29</EndTime><Type>time</Type><IndistinctQuery>1</IndistinctQuery></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK22a3adb92;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=084b98bf
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>;tag=1681004404
+Call-ID: 6b0b4a11
+CSeq: 359485 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK663924637
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2066443771
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 597262638@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   223
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>RecordInfo</CmdType>
+    <SN>105747</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Name>IPC-HFW4436M-I1-V2</Name>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 597262638@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2066443771
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=374da01e
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK663924637;rport=19522;received=14.153.48.58
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK216717045
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=994924844
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1953902460@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>3</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1953902460@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=994924844
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=fc1f21fa
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK216717045;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359487 SUBSCRIBE
+Call-ID: df0c95fb
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=7e7ebbdb
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK244e2cefc;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2304</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:28:32</StartTime><EndTime>2020-07-17T17:28:32</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK244e2cefc;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=7e7ebbdb
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=213697369
+Call-ID: df0c95fb
+CSeq: 359487 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK244e2cefc;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=7e7ebbdb
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=213697369
+Call-ID: df0c95fb
+CSeq: 359487 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2304</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK742407728
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=48967888
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1416744559@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>4</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1416744559@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=48967888
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=82d0e367
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK742407728;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359498 SUBSCRIBE
+Call-ID: 085c6fdd
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=866816e5
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKec274a9fb;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2317</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:29:47</StartTime><EndTime>2020-07-17T17:29:47</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKec274a9fb;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=866816e5
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=286018754
+Call-ID: 085c6fdd
+CSeq: 359498 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKec274a9fb;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=866816e5
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=286018754
+Call-ID: 085c6fdd
+CSeq: 359498 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2317</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1950573337
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1029799299
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1312914164@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>5</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1312914164@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1029799299
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=b11e5994
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1950573337;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359500 MESSAGE
+Call-ID: 91cf7e89
+Content-Length: 133
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=48e8b948
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKcb8a39f61;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>Catalog</CmdType><SN>2319</SN><DeviceID>44190006041328034400</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKcb8a39f61;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=48e8b948
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=963118872
+Call-ID: 91cf7e89
+CSeq: 359500 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK437902532
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=313644686
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 741166614@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   808
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>Catalog</CmdType>
+    <SN>2319</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <SumNum>1</SumNum>
+    <DeviceList Num="1">
+        <Item>
+            <DeviceID>44190006041318034401</DeviceID>
+            <Name>....</Name>
+            <Manufacturer>Dahua</Manufacturer>
+            <Model>IPC-HFW4436M-I1-V2</Model>
+            <Owner>0</Owner>
+            <CivilCode>6532</CivilCode>
+            <Address>axy</Address>
+            <Parental>0</Parental>
+            <ParentID>44190006041328034400</ParentID>
+            <RegisterWay>1</RegisterWay>
+            <Secrecy>0</Secrecy>
+            <Info>
+                <PTZType>3</PTZType>
+            </Info>
+            <Status>ON</Status>
+        </Item>
+    </DeviceList>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 741166614@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=313644686
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=989b3047
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK437902532;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359501 MESSAGE
+Call-ID: f1046744
+Content-Length: 174
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bb429892
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKaf4e188cb;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2320</SN><DeviceID>44190006041318034401</DeviceID><GuardCmd>ResetGuard</GuardCmd></Control>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKaf4e188cb;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bb429892
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=614425934
+Call-ID: f1046744
+CSeq: 359501 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359502 MESSAGE
+Call-ID: 8a7fdddc
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=123d2653
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK3bc1aa910;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2321</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>VideoParamConfig</ConfigType></Query>MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK93796940
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2048509430
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 682203485@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   189
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceControl</CmdType>
+    <SN>2320</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 682203485@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2048509430
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=64e1ffeb
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK93796940;rport=19522;received=14.153.48.58
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK3bc1aa910;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=123d2653
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1464199398
+Call-ID: 8a7fdddc
+CSeq: 359502 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK548042911
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=719180470
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 426925440@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   526
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2321</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <VideoParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <VideoFormat>2</VideoFormat>
+            <Resolution>6</Resolution>
+            <FrameRate>20</FrameRate>
+            <BitRateType>1</BitRateType>
+            <VideoBitRate>5120</VideoBitRate>
+        </Item>
+    </VideoParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 426925440@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=719180470
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=76bb6aa5
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK548042911;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359503 MESSAGE
+Call-ID: 9ef98f30
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=166a6669
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKe60c51488;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>PresetQuery</CmdType><SN>2324</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKe60c51488;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=166a6669
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=660194551
+Call-ID: 9ef98f30
+CSeq: 359503 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1628490467
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=713602206
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 570571319@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   186
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>PresetQuery</CmdType>
+    <SN>2324</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 570571319@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=713602206
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=f1fc0b59
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1628490467;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359504 MESSAGE
+Call-ID: 2452d658
+Content-Length: 143
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=102af88f
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK09abb6cb6;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>HomePositionQuery</CmdType><SN>2325</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK09abb6cb6;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=102af88f
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=724201296
+Call-ID: 2452d658
+CSeq: 359504 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Warning: 399 devnull "<220>[Component:382787]Cmd type 'HomePositionQuery' not understood"
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359505 MESSAGE
+Call-ID: 62b056ea
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=500f2af2
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKc54fde6d1;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2326</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKc54fde6d1;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=500f2af2
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1926474696
+Call-ID: 62b056ea
+CSeq: 359505 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1717297591
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=110053679
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 2110537604@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2326</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 2110537604@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=110053679
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=280d52ad
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1717297591;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359506 MESSAGE
+Call-ID: 717068f5
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=1b3c9455
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK6dfa7edcf;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2327</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK6dfa7edcf;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=1b3c9455
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1837274546
+Call-ID: 717068f5
+CSeq: 359506 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1638755658
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=598570519
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 117140444@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2327</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 117140444@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=598570519
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=99c3007c
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1638755658;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359507 MESSAGE
+Call-ID: 5cd639f1
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=59a1ab9e
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK642374c35;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2328</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK642374c35;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=59a1ab9e
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=273545725
+Call-ID: 5cd639f1
+CSeq: 359507 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1786192391
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=534578647
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 186116221@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2328</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 186116221@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=534578647
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=8ada8f49
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1786192391;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359508 MESSAGE
+Call-ID: 5f5c682d
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=c91b7721
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK376f0f74d;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2329</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK376f0f74d;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=c91b7721
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=941549761
+Call-ID: 5f5c682d
+CSeq: 359508 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK197061735
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=348462817
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 49547294@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2329</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 49547294@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=348462817
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=92889dd0
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK197061735;rport=19522;received=14.153.48.58
+
+MESSAGE sip:08958998749253260000@14.153.48.58:19522 SIP/2.0
+CSeq: 359509 MESSAGE
+Call-ID: 433fae83
+Content-Length: 271
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=5574316c
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK694e254f9;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>RecordInfo</CmdType><SN>105748</SN><DeviceID>44190006041318034401</DeviceID><StartTime>2020-07-16T17:27:29</StartTime><EndTime>2020-07-16T17:30:52</EndTime><Type>time</Type><IndistinctQuery>1</IndistinctQuery></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK694e254f9;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=5574316c
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>;tag=2097423499
+Call-ID: 433fae83
+CSeq: 359509 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1417063204
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=281363615
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1521275679@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   223
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>RecordInfo</CmdType>
+    <SN>105748</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Name>IPC-HFW4436M-I1-V2</Name>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1521275679@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=281363615
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=896d30b1
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1417063204;rport=19522;received=14.153.48.58
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK936112570
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=755347956
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1678104588@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>6</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1678104588@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=755347956
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=4c98c1aa
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK936112570;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359510 SUBSCRIBE
+Call-ID: 03b40baf
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d5e3cc93
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK40c65cbb1;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2330</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:31:07</StartTime><EndTime>2020-07-17T17:31:07</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK40c65cbb1;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d5e3cc93
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1996922652
+Call-ID: 03b40baf
+CSeq: 359510 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK40c65cbb1;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=d5e3cc93
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1996922652
+Call-ID: 03b40baf
+CSeq: 359510 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2330</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK2091241160
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=989038303
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1432276831@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>7</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1432276831@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=989038303
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=55826485
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK2091241160;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359512 SUBSCRIBE
+Call-ID: 94b36c58
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bbc7fa2d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKf002dc6d3;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2332</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:32:22</StartTime><EndTime>2020-07-17T17:32:22</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKf002dc6d3;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bbc7fa2d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=165394254
+Call-ID: 94b36c58
+CSeq: 359512 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKf002dc6d3;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bbc7fa2d
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=165394254
+Call-ID: 94b36c58
+CSeq: 359512 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2332</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1362812205
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1629336398
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 342685409@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>8</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 342685409@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1629336398
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=c9d404e8
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1362812205;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359514 SUBSCRIBE
+Call-ID: 9eb43167
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=788da5d5
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb6e0dc011;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2334</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:33:37</StartTime><EndTime>2020-07-17T17:33:37</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb6e0dc011;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=788da5d5
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=493312769
+Call-ID: 9eb43167
+CSeq: 359514 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb6e0dc011;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=788da5d5
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=493312769
+Call-ID: 9eb43167
+CSeq: 359514 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2334</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK120031714
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=573570529
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1914776800@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   178
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>9</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1914776800@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=573570529
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=3afc9848
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK120031714;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359525 SUBSCRIBE
+Call-ID: fe1ef6ec
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=af3c3372
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK18f1ec5d1;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2347</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:34:52</StartTime><EndTime>2020-07-17T17:34:52</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK18f1ec5d1;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=af3c3372
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=704017411
+Call-ID: fe1ef6ec
+CSeq: 359525 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK18f1ec5d1;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=af3c3372
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=704017411
+Call-ID: fe1ef6ec
+CSeq: 359525 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2347</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK119342237
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1909493229
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 354036412@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   179
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>10</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 354036412@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1909493229
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=bd783d65
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK119342237;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359527 MESSAGE
+Call-ID: c04e69fd
+Content-Length: 133
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=14d5bad2
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKdbfd7e987;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>Catalog</CmdType><SN>2349</SN><DeviceID>44190006041328034400</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKdbfd7e987;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=14d5bad2
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=421501711
+Call-ID: c04e69fd
+CSeq: 359527 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1804970271
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=448847157
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 844139806@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   808
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>Catalog</CmdType>
+    <SN>2349</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <SumNum>1</SumNum>
+    <DeviceList Num="1">
+        <Item>
+            <DeviceID>44190006041318034401</DeviceID>
+            <Name>....</Name>
+            <Manufacturer>Dahua</Manufacturer>
+            <Model>IPC-HFW4436M-I1-V2</Model>
+            <Owner>0</Owner>
+            <CivilCode>6532</CivilCode>
+            <Address>axy</Address>
+            <Parental>0</Parental>
+            <ParentID>44190006041328034400</ParentID>
+            <RegisterWay>1</RegisterWay>
+            <Secrecy>0</Secrecy>
+            <Info>
+                <PTZType>3</PTZType>
+            </Info>
+            <Status>ON</Status>
+        </Item>
+    </DeviceList>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 844139806@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=448847157
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=679ffc54
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1804970271;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359528 MESSAGE
+Call-ID: f3a90d8b
+Content-Length: 174
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=90231538
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK4d8d22f5f;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2350</SN><DeviceID>44190006041318034401</DeviceID><GuardCmd>ResetGuard</GuardCmd></Control>MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359529 MESSAGE
+Call-ID: 7bb1e3c4
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=23360b07
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK6a53b2d90;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2351</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>VideoParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK4d8d22f5f;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=90231538
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=2003069000
+Call-ID: f3a90d8b
+CSeq: 359528 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK6a53b2d90;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=23360b07
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1629489634
+Call-ID: 7bb1e3c4
+CSeq: 359529 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK949646106
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1119472456
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1311108425@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   189
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceControl</CmdType>
+    <SN>2350</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK136021692
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=11488375
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 551746952@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   526
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2351</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <VideoParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <VideoFormat>2</VideoFormat>
+            <Resolution>6</Resolution>
+            <FrameRate>20</FrameRate>
+            <BitRateType>1</BitRateType>
+            <VideoBitRate>5120</VideoBitRate>
+        </Item>
+    </VideoParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1311108425@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1119472456
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=e46b81fc
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK949646106;rport=19522;received=14.153.48.58
+
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 551746952@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=11488375
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=2e251ce3
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK136021692;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359530 MESSAGE
+Call-ID: ca556e38
+Content-Length: 137
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=f888f576
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK2380889ba;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>PresetQuery</CmdType><SN>2354</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK2380889ba;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=f888f576
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=2048746208
+Call-ID: ca556e38
+CSeq: 359530 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1949595612
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1043713648
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1899870919@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   186
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>PresetQuery</CmdType>
+    <SN>2354</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1899870919@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1043713648
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=28babbdc
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1949595612;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359531 MESSAGE
+Call-ID: 630eb5c1
+Content-Length: 143
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=ffbfb3ca
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK309c8c61d;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>HomePositionQuery</CmdType><SN>2355</SN><DeviceID>44190006041318034401</DeviceID></Query>SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK309c8c61d;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=ffbfb3ca
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=189862903
+Call-ID: 630eb5c1
+CSeq: 359531 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Warning: 399 devnull "<220>[Component:382787]Cmd type 'HomePositionQuery' not understood"
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359532 MESSAGE
+Call-ID: a871bdd3
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=c61b75f4
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK53824ca10;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2356</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK53824ca10;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=c61b75f4
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=806030459
+Call-ID: a871bdd3
+CSeq: 359532 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK441970834
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1186981182
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1029020096@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2356</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1029020096@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1186981182
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=9baabe3f
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK441970834;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359533 MESSAGE
+Call-ID: e37f30bf
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=efbf2bd2
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK4fa512073;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2357</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK4fa512073;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=efbf2bd2
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=233155921
+Call-ID: e37f30bf
+CSeq: 359533 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1889567215
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1173819976
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 1146503561@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2357</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1146503561@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1173819976
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=83730bc7
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1889567215;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359534 MESSAGE
+Call-ID: aa8dc062
+Content-Length: 181
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a43b617b
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK5f3eb563d;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>ConfigDownload</CmdType><SN>2358</SN><DeviceID>44190006041318034401</DeviceID><ConfigType>AudioParamConfig</ConfigType></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK5f3eb563d;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=a43b617b
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1246405780
+Call-ID: aa8dc062
+CSeq: 359534 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1420712550
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1415235922
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 478709052@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   448
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>ConfigDownload</CmdType>
+    <SN>2358</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+    <AudioParamConfig Num="1">
+        <Item>
+            <StreamName>Stream1</StreamName>
+            <AudioFormat>1</AudioFormat>
+            <AudioBitRate>8</AudioBitRate>
+            <SamplingRate>1</SamplingRate>
+        </Item>
+    </AudioParamConfig>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 478709052@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1415235922
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=1e27200a
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1420712550;rport=19522;received=14.153.48.58
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359535 MESSAGE
+Call-ID: 3488c29d
+Content-Length: 316
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=fd31f825
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK9ee768cf3;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>DeviceConfig</CmdType><SN>2359</SN><DeviceID>44190006041318034401</DeviceID><AudioParamConfig Num="1"><Item><StreamName>Stream1</StreamName><AudioFormat>1</AudioFormat><AudioBitRate>8</AudioBitRate><SamplingRate>1</SamplingRate></Item></AudioParamConfig></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK9ee768cf3;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=fd31f825
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1843196400
+Call-ID: 3488c29d
+CSeq: 359535 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1355815626
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1458191854
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 245735789@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   188
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>DeviceConfig</CmdType>
+    <SN>2359</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Result>OK</Result>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 245735789@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1458191854
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=0bbe2848
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1355815626;rport=19522;received=14.153.48.58
+
+MESSAGE sip:08958998749253260000@14.153.48.58:19522 SIP/2.0
+CSeq: 359536 MESSAGE
+Call-ID: 8333a9bb
+Content-Length: 271
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=72cd044b
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK6ef8c2f56;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Query><CmdType>RecordInfo</CmdType><SN>105749</SN><DeviceID>44190006041318034401</DeviceID><StartTime>2020-07-16T17:30:52</StartTime><EndTime>2020-07-16T17:35:57</EndTime><Type>time</Type><IndistinctQuery>1</IndistinctQuery></Query>SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK6ef8c2f56;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=72cd044b
+To: 08958998749253260000 <sip:08958998749253260000@14.153.48.58:19522>;tag=772536268
+Call-ID: 8333a9bb
+CSeq: 359536 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@10.1.21.190:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1812802536
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1003116807
+To: <sip:22335990002000000001@10.1.21.190:5080>
+Call-ID: 57855882@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   223
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+    <CmdType>RecordInfo</CmdType>
+    <SN>105749</SN>
+    <DeviceID>44190006041318034401</DeviceID>
+    <Name>IPC-HFW4436M-I1-V2</Name>
+    <SumNum>0</SumNum>
+</Response>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 57855882@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=1003116807
+To: <sip:22335990002000000001@10.1.21.190:5080>;tag=12976a3e
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1812802536;rport=19522;received=14.153.48.58
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK2129721025
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2127446956
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 365290287@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   179
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>11</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 365290287@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=2127446956
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=d4049cd2
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK2129721025;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359537 SUBSCRIBE
+Call-ID: c34dfbd8
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=2da8fedb
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK046e0e236;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2360</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:36:12</StartTime><EndTime>2020-07-17T17:36:12</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK046e0e236;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=2da8fedb
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=2048806445
+Call-ID: c34dfbd8
+CSeq: 359537 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK046e0e236;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=2da8fedb
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=2048806445
+Call-ID: c34dfbd8
+CSeq: 359537 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2360</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+INVITE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359538 INVITE
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+Contact: <sip:10.1.21.190:5080>
+Content-Length: 346
+From: <sip:22335990002000000001@10.1.21.6:5080>;tag=9bdfde73
+To: <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1a0f7886d;rport
+Max-Forwards: 70
+Subject: 44190006041318034401:0,22335990002000000001:10871
+Content-Type: application/sdp
+Server: HUAWEI DCG/1.0
+
+v=0
+o=44190006041318034401 1594892188 1594892188 IN IP4 120.198.174.198
+s=Play
+i=Play to Pu
+u=44190006041318034401:3
+c=IN IP4 120.198.174.198
+t=0 0
+m=video 9194 RTP/AVP 96 97 98 99 111
+a=rtpmap:96 PS/90000
+a=rtpmap:97 MPEG4/90000
+a=rtpmap:98 H264/90000
+a=rtpmap:99 SVAC/90000
+a=rtpmap:111 H265/90000
+a=control:trackID=1
+a=recvonly
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1a0f7886d;rport=5080;received=120.198.174.206
+From: <sip:22335990002000000001@10.1.21.6:5080>;tag=9bdfde73
+To: <sip:44190006041318034401@14.153.48.58:19522>
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+CSeq: 359538 INVITE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1a0f7886d;rport=5080;received=120.198.174.206
+From: <sip:22335990002000000001@10.1.21.6:5080>;tag=9bdfde73
+To: <sip:44190006041318034401@14.153.48.58:19522>;tag=1440367142
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+CSeq: 359538 INVITE
+Contact: <sip:44190006041318034401@14.153.48.58:19522>
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK1a0f7886d;rport=5080;received=120.198.174.206
+From: <sip:22335990002000000001@10.1.21.6:5080>;tag=9bdfde73
+To: <sip:44190006041318034401@14.153.48.58:19522>;tag=1440367142
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+CSeq: 359538 INVITE
+Contact: <sip:44190006041318034401@14.153.48.58:19522>
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: application/sdp
+Content-Length:   226
+
+v=0
+o=44190006041318034401 0 0 IN IP4 128.128.70.24
+s=Play
+i=VCam Live Video
+c=IN IP4 128.128.70.24
+t=0 0
+m=video 9704 RTP/AVP 96
+a=sendonly
+a=rtpmap:96 PS/90000
+a=streamprofile:0
+y=0000000000
+f=v/0/0/0/0/0a/0/0/0
+ACK sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359538 ACK
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+Contact: HUAWEI <sip:10.1.21.190:5080>
+Content-Length: 0
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=9bdfde73
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1440367142
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKe4301ac52;rport
+Max-Forwards: 70
+Server: HUAWEI DCG/1.0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359540 MESSAGE
+Call-ID: 4a42c89d
+Content-Length: 168
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bdf0f728
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKd5403aa27;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2361</SN><DeviceID>44190006041318034401</DeviceID><IFameCmd>Send</IFameCmd></Control>SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKd5403aa27;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=bdf0f728
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=1671217685
+Call-ID: 4a42c89d
+CSeq: 359540 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Warning: 399 devnull "<220>[Component:382787]Cmd type 'DeviceControl' not understood"
+Content-Length: 0
+
+MESSAGE sip:44190006041318034401@14.153.48.58:19522 SIP/2.0
+CSeq: 359541 MESSAGE
+Call-ID: b3bd672b
+Content-Length: 168
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=7b64d9b6
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb3aaaa96c;rport
+Max-Forwards: 70
+Content-Type: application/MANSCDP+xml
+Content-Encoding: utf-8
+Server: HUAWEI SCC/1.0
+
+<?xml version="1.0" encoding="UTF-8"?><Control><CmdType>DeviceControl</CmdType><SN>2362</SN><DeviceID>44190006041318034401</DeviceID><IFameCmd>Send</IFameCmd></Control>SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKb3aaaa96c;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=7b64d9b6
+To: 44190006041318034401 <sip:44190006041318034401@14.153.48.58:19522>;tag=795230607
+Call-ID: b3bd672b
+CSeq: 359541 MESSAGE
+User-Agent: Dahua SIP UAS V1.0
+Warning: 399 devnull "<220>[Component:382787]Cmd type 'DeviceControl' not understood"
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK1101814546
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=638861668
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1361836158@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   179
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>12</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1361836158@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=638861668
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=9570bde9
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK1101814546;rport=19522;received=14.153.48.58
+
+SUBSCRIBE sip:44190006041328034400@14.153.48.58:19522 SIP/2.0
+CSeq: 359543 SUBSCRIBE
+Call-ID: 9bd2e3ec
+Contact: 22335990002000000001 <sip:10.1.21.190:5080>
+Content-Length: 214
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=1d527c17
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK248bf43f8;rport
+Max-Forwards: 70
+Expires: 90
+Content-Type: application/MANSCDP+xml
+Event: presence
+
+<?xml version="1.0" encoding="UTF-8" ?><Query><CmdType>Catalog</CmdType><SN>2364</SN><DeviceID>44190006041328034400</DeviceID><StartTime>2020-07-16T17:37:27</StartTime><EndTime>2020-07-17T17:37:27</EndTime></Query>SIP/2.0 101 Dialog Establishement
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK248bf43f8;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=1d527c17
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1429684710
+Call-ID: 9bd2e3ec
+CSeq: 359543 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bK248bf43f8;rport=5080;received=120.198.174.206
+From: 22335990002000000001 <sip:22335990002000000001@10.1.21.190:5080>;tag=1d527c17
+To: 44190006041328034400 <sip:44190006041328034400@14.153.48.58:19522>;tag=1429684710
+Call-ID: 9bd2e3ec
+CSeq: 359543 SUBSCRIBE
+Contact: <sip:44190006041328034400@14.153.48.58:19522>
+Event: presence
+User-Agent: Dahua SIP UAS V1.0
+Expires: 90
+Content-Type: Application/MANSCDP+xml
+Content-Length:   174
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Response>
+<CmdType>Catalog</CmdType>
+<SN>2364</SN>
+<DeviceID>44190006041328034400</DeviceID>
+<Result>OK</Result>
+</Response>
+BYE sip:44190006041328034400@10.1.21.6:5080 SIP/2.0
+CSeq: 359539 BYE
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+Content-Length: 0
+From: 44190006041328034400 <sip:44190006041328034400@10.1.21.190:5080>;tag=9bdfde73
+To: 44190006041328034400 <sip:44190006041328034400@10.1.21.6:5080>;tag=1440367142
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKdbd2a0ffe;rport
+Max-Forwards: 70
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.1.21.190:5080;branch=z9hG4bKdbd2a0ffe;rport=5080;received=120.198.174.206
+From: 44190006041328034400 <sip:44190006041328034400@10.1.21.190:5080>;tag=9bdfde73
+To: 44190006041328034400 <sip:44190006041328034400@10.1.21.6:5080>;tag=1440367142
+Call-ID: d31d3c8cc74711ea800060f18a6803ff@10.1.21.6
+CSeq: 359539 BYE
+User-Agent: Dahua SIP UAS V1.0
+Content-Length: 0
+
+MESSAGE sip:22335990002000000001@120.198.174.206:5080 SIP/2.0
+Via: SIP/2.0/UDP 128.128.70.24:19522;rport;branch=z9hG4bK30035170
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=50456220
+To: <sip:22335990002000000001@120.198.174.206:5080>
+Call-ID: 1648262625@128.128.70.24
+CSeq: 20 MESSAGE
+Max-Forwards: 70
+User-Agent: Dahua SIP UAS V1.0
+Content-Type: Application/MANSCDP+xml
+Content-Length:   179
+
+<?xml version="1.0" encoding="GB2312" ?>
+<Notify>
+    <CmdType>Keepalive</CmdType>
+    <SN>13</SN>
+    <DeviceID>44190006041328034400</DeviceID>
+    <Status>OK</Status>
+</Notify>
+SIP/2.0 200 OK
+CSeq: 20 MESSAGE
+Call-ID: 1648262625@128.128.70.24
+Content-Length: 0
+From: <sip:44190006041328034400@128.128.70.24:5060>;tag=50456220
+To: <sip:22335990002000000001@120.198.174.206:5080>;tag=9fb273ef
+Via: SIP/2.0/UDP 128.128.70.24:19522;branch=z9hG4bK30035170;rport=19522;received=14.153.48.58
+

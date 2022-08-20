@@ -1,0 +1,38 @@
+” œ‰£∫smartkiosktester@titan-services.com  
+
+√‹¬Î£∫Guangdong518108
+
+µ«¬ºµÿ÷∑£∫smtp.office365.com
+
+
+…Ë÷√”¶”√√‹¬Î£∫https://account.activedirectory.windowsazure.com/AppPasswords.aspx
+bhkhzyfwqnyjtkzp
+
+
+QQ£∫
+fewkyxoshsbxbfdh
+
+
+HELO Localhost
+250 HK2PR04CA0061.outlook.office365.com Hello [14.153.50.130]
+AUTH LOGIN
+334 VXNlcm5hbWU6
+c21hcnRraW9za3Rlc3RlckB0aXRhbi1zZXJ2aWNlcy5jb20=
+334 UGFzc3dvcmQ6
+YmhraHp5ZndxbnlqdGt6cAo=
+235 2.7.0 Authentication successful
+
+MAIL FROM: <smartkiosktester@titan-services.com>
+
+RCPT TO: <cdynhb@163.com>
+
+DATA
+
+From: <smartkiosktester@titan-services.com>
+To: <cdynhb@163.com>
+Subject: third time use telnet 163
+hello office365!
+<CR><LF>.<CR><LF>
+
+
+

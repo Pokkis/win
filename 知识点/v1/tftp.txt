@@ -1,0 +1,3 @@
+tftp -p 电脑IP -r  ./xx.jpg（文件名）  //设备到电脑
+tftp -g 电脑IP -r  ./xx.jpg（文件名）  //电脑到设备
+

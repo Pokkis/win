@@ -1,0 +1,22 @@
+通过查看每个线程所占用的CPU时间缩小到具体线程，然后代码调。
+proc/pid/task下包含了该进程所有的线程，例如线程号2012,那么在proc/pid/task/2012/stat文件可以获取到此线程的信息，
+1）查看线程情况：
+
+#ps -T -A -o pid,ppid,pgid,etime,nice,rgroup,ruser,time,vsz,rss,args
+
+
+2）查看进程情况：
+
+#ps -A -o pid,ppid,pgid,etime,nice,rgroup,ruser,time,vsz,rss,args
+
+
+查看句柄命令：
+ulimit -n  //系统默认的句柄数
+lsof -n|awk '{print $2}'|sort|uniq -c|sort -nr|more //查看当前进程打开了多少句柄数
+lsof | wc -l //查看系统文件句柄总数
+通过进程号查看句柄：
+cd /proc/217(进程号)/fd
+ls -l | wc -l
+
+
+Mem: 44388K used, 14756K free, 0K shrd, 1038912K buff, 1038952K cached

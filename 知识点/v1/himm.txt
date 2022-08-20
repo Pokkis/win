@@ -1,0 +1,15 @@
+himm 0x114f0058 0x403;
+himm 0x1114f005c 0x503
+
+
+himm address [value]
+功能：把 address 对应的地址改写为 value。
+如果没有输入 value，himm 会把 address 对应的值打印出来，然后提示输入新的值。
+
+himd address [length]
+从 address 开始，以大端方式打印 length 字节长度的内容。
+如果没有输入length， 那么默认打印256 字节。
+
+himd.l address [length]
+从 address 开始，以小端方式打印 length 字节长度的内容。
+如果没有输入length， 那么默认打印256 字节。

@@ -1,0 +1,65 @@
+
+
+cdynhb@gmail.com   //Y2R5bmhiQGdtYWlsLmNvbQ==
+
+pyyuqubeznbekznh
+
+QQ£º
+wzlixxjqhkjbbbac
+
+
+response error:503 5.5.1 MAIL first. 72sm9082633pfx.79 - gsmtp
+
+MSG_ID_EMAIL_CMPINFO  szContext = DeviceName: IPC1000 
+Name:  
+Listtype: StrangerList 
+Mask: No 
+Temperature: 36.60¡æ 
+Time: 2020-09-28 11:07:51 szFilename = /data/temppic.jpg
+SendEmail 2420: port = 465
+SendEmail 2423: SMTP_AUTHENTICATION
+SslInit 630 SSL_CTX_get_timeout(ctx) 7200
+SslInit 632 SSL_CTX_get_timeout(ctx) 30
+Smtp_SslSendEmail 2292: before Smtp_ConnectHost
+Smtp_ConnectHost 1168
+Ssl_ConnetHost 934: before SslConnect
+SslConnect 723 start
+SslConnect 735 end
+Ssl_ConnetHost 940: after SslConnect
+SSL connect Ok!
+Smtp_SslLogin 1887 CmdStr[0] = EHLO linux-9955.site
+
+Smtp_SslLogin 1888 CmdStr[1] = AUTH LOGIN
+
+SSL get data OK:'220 smtp.gmail.com ESMTP f4sm7983643pgk.19 - gsmtp
+', recieve number is:52
+SSL get data OK:'250-smtp.gmail.com at your service, [14.153.48.196]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+', recieve number is:222
+SSL get data OK:'334 VXNlcm5hbWU6
+', recieve number is:18
+SSL get data OK:'334 UGFzc3dvcmQ6
+', recieve number is:18
+login
+Connect the smtp host EncryptionType = 0
+SSL get data OK:'235 2.7.0 Accepted
+', recieve number is:20
+SSL get data OK:'250-smtp.gmail.com at your service, [14.153.48.196]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+', recieve number is:222
+response error:503 5.5.1 MAIL first. f4sm7983643pgk.19 - gsmtp
+
+send mail error
+Smtp_SendEmail error!.

@@ -1,0 +1,11 @@
+./configure --host=arm-linux CC=arm-himix200-linux-uclibcgnueabi-gcc AR=arm-himix200-linux-uclibcgnueabi-ar --prefix="$(pwd)/../install/" LDFLAGS="-L$(pwd)/../install/lib -ltermcap -lm"
+CC=arm-himix200-linux-gcc ./configure --host=arm-himix200-linux --target=arm-himix200-linux --program-prefix=arm-himix200-linux- --prefix=/opt/mix200gdb
+./configure --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --program-prefix=arm-linux --prefix=/opt/gdb
+./configure --target=arm-himix200-linux --program-prefix=arm-himix200-linux-  --prefix=/opt/mix200gdb 
+
+./configure --host=arm-himix200-linux --enable-static --disable-shared --prefix="$(pwd)/installEx1/"
+
+./configure --prefix="$(pwd)/installEx1/" --host=arm-linux-gnueabihf CC=/usr/local/linaro-multilib-2013.09-gcc4.8/bin/arm-linux-gnueabihf-gcc CXX=/usr/local/linaro-multilib-2013.09-gcc4.8/bin/arm-linux-gnueabihf-g++ LDFLAGS="-L/usr/local/linaro-multilib-2013.09-gcc4.8/lib" CPPFLAGS="-I/usr/local/linaro-multilib-2013.09-gcc4.8/include"
+
+
+

@@ -1,0 +1,6 @@
+himm 0x10FF0040 0x0600
+himm 0x10FF003C 0x0600
+echo 17 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio17/direction
+echo 1 > /sys/class/gpio/gpio17/value
+
